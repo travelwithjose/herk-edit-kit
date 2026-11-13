@@ -10,7 +10,8 @@ export function validatePlan(plan,transcript,edl,exists=()=>true){
   const cap=caps[i];if(!cap||cap.text!==w.text)fail(`Caption ${i} missing or different`);
   else if(Math.abs(cap.start-w.start)>.005||Math.abs(cap.end-w.end)>.005)fail(`Caption ${i} timing differs from transcript`);
   if(w.end<=w.start||w.start<0||w.end>plan.duration+tol)fail(`Word ${i} outside timeline`);
-  const k=edl.keeps.find(k=>w.sourceStart>=k.sourceStart-.016&&w.sourceEnd<=k.sourceEnd+.016);
+  // Multi-source EDLs: when both the keep and the word name a source file, they must match.
+  const k=edl.keeps.find(k=>(!k.source||!w.source||k.source===w.source)&&w.sourceStart>=k.sourceStart-.016&&w.sourceEnd<=k.sourceEnd+.016);
   if(!k)fail(`Word ${i} crosses a cut or has no source range`);
   else if(Math.abs(w.start-(k.start+w.sourceStart-k.sourceStart))>.006)fail(`Word ${i} source mapping incorrect`);
  });
