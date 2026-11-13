@@ -151,6 +151,14 @@ a distinct opening-hook gate in the verification report.
   y=200..1600, reserving the right edge and bottom for social UI. Adjust captions
   to actual face position in every layout. Use short phrase groups and exact
   word onsets; keyword emphasis must preserve the speaker's wording.
+- Place gesture-linked graphics where the speaker points. Before positioning a
+  label, sticker, or callout tied to a spoken item, inspect the frames around
+  that word (about 5 fps for one second) and note the pointing or gesture
+  direction: up-left, straight up, up-right, toward the lens. Put the graphic in
+  that direction, near the fingertip, angled with the gesture. It must still stay
+  inside the safe region and off the face. If there's no clear gesture, use a
+  neutral layout. Record each item's direction in the plan, and recheck the
+  encoded frames after any retiming or reframing (punch-ins move the hand).
 
 For a minimal, Apple-style brief, read
 [premium-motion-and-footage.md](references/premium-motion-and-footage.md).
