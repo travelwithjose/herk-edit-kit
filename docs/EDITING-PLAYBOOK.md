@@ -36,6 +36,7 @@ Real examples of notes that became rules:
 | "Captions should never blink out." | On shots full of text to read, captions move to a clear zone instead of disappearing. |
 | "You cut out my natural pause after 'first', it feels too quick." Then, after a fix that added silence there: "You muted out the word first." | Speech is cut between phrases at real silence, never inside one. A filler that runs straight into the next word stays, because cutting it clips the words around it. |
 | "The caption covers my mouth in the first second." | A caption that runs across a cut moves with the cut, and the first 2.5 s are checked frame by frame for anything over the mouth. |
+| "I pointed to the right on 'Europe' but you put it on the left." | Labels tied to a gesture are placed in the direction the speaker points, checked on the encoded frame at that word. |
 
 The editing knowledge lives in the skill files, so you can read it, edit it, and share it.
 

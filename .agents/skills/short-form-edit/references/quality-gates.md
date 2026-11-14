@@ -15,6 +15,7 @@ Apply these to the encoded final, not only the source composition.
 | Word timing | EDL-derived words, fresh final-audio ASR, spot checks | Cut consonant, missing word, caption ahead of speech |
 | Cadence | Shot durations and semantic visual-event map | Repeated template, >2.2 s gap without a deliberate story hold |
 | Layout | Every hero frame at full size and phone scale | Face cropped, mouth covered, text beyond safe region |
+| Gesture placement | Encoded frame at each gesture-linked label's word, showing the pointing direction and the label's position | Speaker points right but the label pops in on the left; label covers the pointing hand or the face |
 | Motion | Contiguous encoded frames across every transition | Black flash, one-frame pop, unexpected freeze, conflicting moves |
 | Paper depth (paper briefs only) | Close inspection of object edges, shadows, perspective | Flat rectangles used as decorative slide containers |
 | Dimensional typography (when chosen) | Full-size and phone-size major headings, bevel/edge, cast shadow, readable perspective | Flat titles above dimensional objects, muddy extrusion, glowing text |
